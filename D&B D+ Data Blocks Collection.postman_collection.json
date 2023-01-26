@@ -1,0 +1,5689 @@
+{
+	"info": {
+		"_postman_id": "4c36ecd9-c427-463e-8150-d71bf8d9f3f7",
+		"name": "D&B D+ Data Blocks Collection",
+		"description": "D&B Direct+ Data Blocks Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "135391"
+	},
+	"item": [
+		{
+			"name": "IDentity Resolution",
+			"item": [
+				{
+					"name": "IDR name, country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?name=fox it&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "fox it"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution name, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR name, city, country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?name=de librije&addressLocality=zwolle&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "de librije"
+								},
+								{
+									"key": "addressLocality",
+									"value": "zwolle"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution name, city, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR name, adr, city, country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?name=exact&streetAddressLine1=molengraaffsingel 33&addressLocality=delft&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "exact"
+								},
+								{
+									"key": "streetAddressLine1",
+									"value": "molengraaffsingel 33"
+								},
+								{
+									"key": "addressLocality",
+									"value": "delft"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution name, adr, city, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR name, housenumber, postalcode, country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?name=van Amerongen&streetAddressLine1=386&postalCode=2629 HG&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "van Amerongen"
+								},
+								{
+									"key": "streetAddressLine1",
+									"value": "386"
+								},
+								{
+									"key": "postalCode",
+									"value": "2629 HG"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution name, housenumber, postalcode, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR housenumber, postalcode, NL (active)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?exclusionCriteria=ExcludeOutofBusiness&streetAddressLine1=33&postalCode=2629 JD&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "exclusionCriteria",
+									"value": "ExcludeOutofBusiness"
+								},
+								{
+									"key": "streetAddressLine1",
+									"value": "33"
+								},
+								{
+									"key": "postalCode",
+									"value": "2629 JD"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution name, housenumber, postalcode, country"
+					},
+					"response": []
+				},
+				{
+					"name": "inLanguage, name, TW",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?inLanguage=zh-hant-TW&name=美商鄧白氏股份有限公司台灣分公司&addressLocality=松山&countryISOAlpha2Code=TW",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "inLanguage",
+									"value": "zh-hant-TW"
+								},
+								{
+									"key": "name",
+									"value": "美商鄧白氏股份有限公司台灣分公司"
+								},
+								{
+									"key": "addressLocality",
+									"value": "松山"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "TW"
+								}
+							]
+						},
+						"description": "IDentity Resolution name, housenumber, postalcode, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (AT Trade Reg #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=FN125430g&countryISOAlpha2Code=AT",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "FN125430g"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "AT"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (AT VAT)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=ATU36897300&countryISOAlpha2Code=AT",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "ATU36897300"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "AT"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (BE VAT)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=BE0438950833&countryISOAlpha2Code=BE",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "BE0438950833"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "BE"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (BE Enterprise #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=0438950833&countryISOAlpha2Code=BE",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "0438950833"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "BE"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (BG Gov Gazette #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=121830616&countryISOAlpha2Code=BG",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "121830616"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "BG"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (BG Tax Reg #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=BG121830616&countryISOAlpha2Code=BG",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "BG121830616"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "BG"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (HR Tax Reg #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=25190869349&countryISOAlpha2Code=HR",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "25190869349"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "HR"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (HR Bus Reg #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=01919016&countryISOAlpha2Code=HR",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "01919016"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "HR"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (CY Bus Reg #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=HE142841&countryISOAlpha2Code=CY",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "HE142841"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "CY"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (CY Tax Reg #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=CY10142841B&countryISOAlpha2Code=CY",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "CY10142841B"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "CY"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (CZ ICO #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=00177041&countryISOAlpha2Code=CZ",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "00177041"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "CZ"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (CZ VAT)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=CZ00177041&countryISOAlpha2Code=CZ",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "CZ00177041"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "CZ"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (DK CVR #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=22756214&countryISOAlpha2Code=DK",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "22756214"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "DK"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (EE Bus Reg #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=11240411&countryISOAlpha2Code=EE",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "11240411"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "EE"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (EE Tax Reg #)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=EE100220641&countryISOAlpha2Code=EE",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "EE100220641"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "EE"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (NL KvK)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=65482980&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "65482980"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (NL BUN)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=000018362737&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "000018362737"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (NL VAT)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=NL815278494B01&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "NL815278494B01"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (FR Siren) active",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?countryISOAlpha2Code=FR&registrationNumber=821937828&exclusionCriteria=ExcludeOutofBusiness",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "FR"
+								},
+								{
+									"key": "registrationNumber",
+									"value": "821937828"
+								},
+								{
+									"key": "exclusionCriteria",
+									"value": "ExcludeOutofBusiness"
+								}
+							]
+						},
+						"description": "IDentity Resolution registration number, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (US EIN)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?countryISOAlpha2Code=US&registrationNumber=741838917",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "US"
+								},
+								{
+									"key": "registrationNumber",
+									"value": "741838917"
+								}
+							]
+						},
+						"description": "IDentity Resolution registration number, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (DE IHK)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?countryISOAlpha2Code=DE&registrationNumber=10623B137356B",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "DE"
+								},
+								{
+									"key": "registrationNumber",
+									"value": "10623B137356B"
+								},
+								{
+									"key": "exclusionCriteria",
+									"value": "ExcludeOutofBusiness",
+									"disabled": true
+								}
+							]
+						},
+						"description": "IDentity Resolution registration number, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (DE VAT)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?countryISOAlpha2Code=DE&registrationNumber=DE119420499",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "DE"
+								},
+								{
+									"key": "registrationNumber",
+									"value": "DE119420499"
+								},
+								{
+									"key": "exclusionCriteria",
+									"value": "ExcludeOutofBusiness",
+									"disabled": true
+								}
+							]
+						},
+						"description": "IDentity Resolution registration number, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (IT Fiscal code) active",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?countryISOAlpha2Code=IT&registrationNumber=IT00470550013&exclusionCriteria=ExcludeOutofBusiness",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "IT"
+								},
+								{
+									"key": "registrationNumber",
+									"value": "IT00470550013"
+								},
+								{
+									"key": "exclusionCriteria",
+									"value": "ExcludeOutofBusiness"
+								}
+							]
+						},
+						"description": "IDentity Resolution registration number, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (PL)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?countryISOAlpha2Code=IT&registrationNumber=IT00470550013&exclusionCriteria=ExcludeOutofBusiness",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "IT"
+								},
+								{
+									"key": "registrationNumber",
+									"value": "IT00470550013"
+								},
+								{
+									"key": "exclusionCriteria",
+									"value": "ExcludeOutofBusiness"
+								}
+							]
+						},
+						"description": "IDentity Resolution registration number, country"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR DUNS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?duns=489916788",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "duns",
+									"value": "489916788"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR Tel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?telephoneNumber=0348420042&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "telephoneNumber",
+									"value": "0348420042"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?email=sollicitatie@a12personeelsdiensten.nl&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "sollicitatie@a12personeelsdiensten.nl"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR URL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?url=akzonobel.com&countryISOAlpha2Code=NL",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "akzonobel.com"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				}
+			],
+			"description": "IDentity Resolution, establish a DUNS based on multiple criteria",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Typeahead",
+					"item": [
+						{
+							"name": "Typeahead \"al\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=al&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "al"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"al\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"alt\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=alt&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "alt"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"alt\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"alta\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=alta&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "alta"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"alta\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"altar\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=altar&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "altar"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"altar\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"agglo\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=agglo&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "agglo"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"agglo\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"lib\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=lib&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "lib"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"al\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"libr\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=libr&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "libr"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"al\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"libri\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=libri&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "libri"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"al\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"librij\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=librij&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "librij"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"al\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"basic fit\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=librij&countryISOAlpha2Code=NL",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "librij"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										}
+									]
+								},
+								"description": "Search \"al\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"basic fit, delft\" NL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=basic fit&countryISOAlpha2Code=NL&addressLocality=delft",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "basic fit"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										},
+										{
+											"key": "addressLocality",
+											"value": "delft"
+										}
+									]
+								},
+								"description": "Search \"al\" in country code NL"
+							},
+							"response": []
+						},
+						{
+							"name": "Typeahead \"basic fit, delft\" NL Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=basic fit&countryISOAlpha2Code=NL&addressLocality=delft",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"typeahead"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "basic fit"
+										},
+										{
+											"key": "countryISOAlpha2Code",
+											"value": "NL"
+										},
+										{
+											"key": "addressLocality",
+											"value": "delft"
+										}
+									]
+								},
+								"description": "Search \"al\" in country code NL"
+							},
+							"response": []
+						}
+					],
+					"description": "Webform typeahead",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Criteria",
+					"item": [
+						{
+							"name": "Registration number",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"registrationNumbers\":[\"37026706\"],\r\n    \"countryISOAlpha2Code\":\"NL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/criteria",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"criteria"
+									]
+								},
+								"description": "Criteria search for registration number"
+							},
+							"response": []
+						},
+						{
+							"name": "Registration number (incl branches)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"registrationNumbers\":[\"37026706\"],\r\n    \"countryISOAlpha2Code\":\"NL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/criteria",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"criteria"
+									]
+								},
+								"description": "Criteria search for registration number"
+							},
+							"response": []
+						},
+						{
+							"name": "List & Label",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isOutOfBusiness\":false,\r\n    \"usSicV4\":[\"5431\", \"5461\"],\r\n    \"addressLocality\":\"Delft\",\r\n    \"countryISOAlpha2Code\":\"NL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/criteria",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"criteria"
+									]
+								},
+								"description": "Criteria search for registration number"
+							},
+							"response": []
+						},
+						{
+							"name": "Examples",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isOutOfBusiness\":false,\r\n    \"usSicV4\":[\"5093\"],\r\n    \"numberOfEmployees\": {\"informationScope\": 9066, \"maximumValue\": 25},\r\n    \"countryISOAlpha2Code\":\"US\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/criteria",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"criteria"
+									]
+								},
+								"description": "Criteria search for registration number"
+							},
+							"response": []
+						},
+						{
+							"name": "Examples risk ind",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isOutOfBusiness\":false,\r\n    \"usSicV4\":[\"5093\"],\r\n    \"numberOfEmployees\": {\"informationScope\": 9066, \"maximumValue\": 25},\r\n    \"countryISOAlpha2Code\":\"US\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/criteria",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"criteria"
+									]
+								},
+								"description": "Criteria search for registration number"
+							},
+							"response": []
+						},
+						{
+							"name": "Address",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isOutOfBusiness\":false,\r\n    \"streetAddressLine1\":\"Otto Reuchlinweg 1032\",\r\n    \"addressLocality\":\"Rotterdam\",\r\n    \"countryISOAlpha2Code\":\"NL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/criteria",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"criteria"
+									]
+								},
+								"description": "Criteria search for registration number"
+							},
+							"response": []
+						},
+						{
+							"name": "Address Fuzzy?",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isOutOfBusiness\":false,\r\n    \"streetAddressLine1\":\"O Reuchlinweg 1032\",\r\n    \"addressLocality\":\"Rotterdam\",\r\n    \"countryISOAlpha2Code\":\"NL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/criteria",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"criteria"
+									]
+								},
+								"description": "Criteria search for registration number"
+							},
+							"response": []
+						},
+						{
+							"name": "Address CA",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isOutOfBusiness\":false,\r\n    \"streetAddressLine1\":\"500 Consumers Road\",\r\n    \"addressLocality\":\"North York\",\r\n    \"countryISOAlpha2Code\":\"CA\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/criteria",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"criteria"
+									]
+								},
+								"description": "Criteria search for registration number"
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			],
+			"description": "Search, identify a DUNS or multiple DUNS",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Data Blocks",
+			"item": [
+				{
+					"name": "Company Info L1 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyinfo_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "companyinfo_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Company Info L2 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyinfo_L2_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "companyinfo_L2_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Company Info L3 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyinfo_L3_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "companyinfo_L3_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489382060",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Company Info L4 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyinfo_L4_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "companyinfo_L4_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Hierarchies & Connections L1 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=hierarchyconnections_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "hierarchyconnections_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "491689684",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Principals & Contacts L1 (v2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L1_v2&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "principalscontacts_L1_v2"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "492127996",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Principals & Contacts L1 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "principalscontacts_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "492127996",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Principals & Contacts L2 (v2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L2_v2&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "principalscontacts_L2_v2"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "492127996",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Principals & Contacts L2 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L2_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "principalscontacts_L2_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "492127996",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Principals & Contacts L3 (v2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L3_v2&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "principalscontacts_L3_v2"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "386267640",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Principals & Contacts L3 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L3_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "principalscontacts_L3_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "386267640",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Principals & Contacts L4 (v2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L4_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "principalscontacts_L4_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "492127996",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Principals & Contacts L4 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L4_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "principalscontacts_L4_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "492127996",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Company Financials L1 (v2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyfinancials_L1_v2&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "companyfinancials_L1_v2"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "403425999",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Company Financials L2 (v2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyfinancials_L2_v2&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "companyfinancials_L2_v2"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "403425999",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Company Financials L3 (v2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyfinancials_L3_v2&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "companyfinancials_L3_v2"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "403425999",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Company Financials L4 (v2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyfinancials_L4_v2&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "companyfinancials_L4_v2"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "403425999",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Financial Strength Insights L1 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=financialstrengthinsight_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "financialstrengthinsight_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Financial Strength Insights L2 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=financialstrengthinsight_L2_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "financialstrengthinsight_L2_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Financial Strength Insights L3 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=financialstrengthinsight_L3_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "financialstrengthinsight_L3_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Financial Strength Insights L4 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=financialstrengthinsight_L4_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "financialstrengthinsight_L4_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Financial Strength Insights L5 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=financialstrengthinsight_L5_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "financialstrengthinsight_L5_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Payment Insights L1 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=paymentinsight_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "paymentinsight_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "410648083",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Payment Insights L2 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=paymentinsight_L2_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "paymentinsight_L2_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "410648083",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Payment Insights L3 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=paymentinsight_L3_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "paymentinsight_L3_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "410648083",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Payment Insights L4 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=paymentinsight_L4_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "paymentinsight_L4_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "410648083",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Filings & Events L1 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=eventfilings_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "eventfilings_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Filings & Events L2 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=eventfilings_L2_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "eventfilings_L2_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Filings & Events L3 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=eventfilings_L3_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "eventfilings_L3_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ownership Insights L1 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=ownershipinsight_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "ownershipinsight_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "491000228",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Global Financials (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=globalfinancials_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "globalfinancials_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "403425999",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Global Financials (v2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=globalfinancials_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "globalfinancials_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "ESG Insights (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=esginsight_L3_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "esginsight_L3_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "490964252",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Indate Insight L1 (v1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=indateinsight_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "indateinsight_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "744413339",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Combined",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyinfo_L2_v1,principalscontacts_L3_v1&tradeUp=hq&orderReason=6332",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489127287",
+									"type": "string"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Company profile UBO",
+			"item": [
+				{
+					"name": "Beneficial Ownership List NL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/beneficialowner?duns=491928794&productId=cmpbol&versionId=v1&tradeUp=hq&ownershipPercentage=2.5",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"beneficialowner"
+							],
+							"query": [
+								{
+									"key": "duns",
+									"value": "491928794"
+								},
+								{
+									"key": "productId",
+									"value": "cmpbol"
+								},
+								{
+									"key": "versionId",
+									"value": "v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								},
+								{
+									"key": "ownershipPercentage",
+									"value": "2.5"
+								}
+							]
+						},
+						"description": "Company Profile Beneficial Ownership List"
+					},
+					"response": []
+				},
+				{
+					"name": "Beneficial Ownership List UK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/beneficialowner?duns=237577692&productId=cmpbol&versionId=v1&tradeUp=hq&ownershipPercentage=2.5",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"beneficialowner"
+							],
+							"query": [
+								{
+									"key": "duns",
+									"value": "237577692"
+								},
+								{
+									"key": "productId",
+									"value": "cmpbol"
+								},
+								{
+									"key": "versionId",
+									"value": "v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								},
+								{
+									"key": "ownershipPercentage",
+									"value": "2.5"
+								}
+							]
+						},
+						"description": "Company Profile Beneficial Ownership List"
+					},
+					"response": []
+				},
+				{
+					"name": "Beneficial Ownership List Test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/beneficialowner?duns=491928794&productId=cmpbol&versionId=v1&tradeUp=hq&ownershipPercentage=2.5",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"beneficialowner"
+							],
+							"query": [
+								{
+									"key": "duns",
+									"value": "491928794"
+								},
+								{
+									"key": "productId",
+									"value": "cmpbol"
+								},
+								{
+									"key": "versionId",
+									"value": "v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								},
+								{
+									"key": "ownershipPercentage",
+									"value": "2.5"
+								}
+							]
+						},
+						"description": "Company Profile Beneficial Ownership List"
+					},
+					"response": []
+				},
+				{
+					"name": "Beneficial Ownership Structure",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/beneficialowner?duns=413824579&productId=cmpbos&versionId=v1&tradeUp=hq&ownershipPercentage=2.5",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"beneficialowner"
+							],
+							"query": [
+								{
+									"key": "duns",
+									"value": "413824579"
+								},
+								{
+									"key": "productId",
+									"value": "cmpbos"
+								},
+								{
+									"key": "versionId",
+									"value": "v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								},
+								{
+									"key": "ownershipPercentage",
+									"value": "2.5"
+								}
+							]
+						},
+						"description": "Company Profile Beneficial Ownership Structure"
+					},
+					"response": []
+				}
+			],
+			"description": "Company profile, beneficial ownership products",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "Business Information Report PDF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/reports/duns/:sDUNS?productId=birstd&inLanguage=en-US&reportFormat=PDF&orderReason=6332&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"reports",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "birstd"
+								},
+								{
+									"key": "inLanguage",
+									"value": "en-US"
+								},
+								{
+									"key": "reportFormat",
+									"value": "PDF"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "491928794"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Business Information Report HTML",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/reports/duns/:sDUNS?productId=birstd&inLanguage=en-US&reportFormat=HTML&orderReason=6332&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"reports",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "birstd"
+								},
+								{
+									"key": "inLanguage",
+									"value": "en-US"
+								},
+								{
+									"key": "reportFormat",
+									"value": "HTML"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comprehensive Report PDF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/reports/duns/:sDUNS?productId=comprh&inLanguage=en-US&reportFormat=PDF&orderReason=6332&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"reports",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "comprh"
+								},
+								{
+									"key": "inLanguage",
+									"value": "en-US"
+								},
+								{
+									"key": "reportFormat",
+									"value": "PDF"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Family tree",
+			"item": [
+				{
+					"name": "Family tree Global Fresh",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/familyTree/:sDUNS",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"familyTree",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "exclusionCriteria",
+									"value": "Branches",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string"
+								}
+							]
+						},
+						"description": "Corporate family tree Global Fresh"
+					},
+					"response": []
+				},
+				{
+					"name": "Family tree mult pages (1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/familyTree/:sDUNS?page[size]=1000&page[number]=1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"familyTree",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "exclusionCriteria",
+									"value": "Branches",
+									"disabled": true
+								},
+								{
+									"key": "page[size]",
+									"value": "1000"
+								},
+								{
+									"key": "page[number]",
+									"value": "1"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "283009512",
+									"type": "string"
+								}
+							]
+						},
+						"description": "Corporate family tree multiple pages (page 1)"
+					},
+					"response": []
+				},
+				{
+					"name": "Family tree mult pages (2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/familyTree/:sDUNS?page[size]=1000&page[number]=2",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"familyTree",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "exclusionCriteria",
+									"value": "Branches",
+									"disabled": true
+								},
+								{
+									"key": "page[size]",
+									"value": "1000"
+								},
+								{
+									"key": "page[number]",
+									"value": "2"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "283009512",
+									"type": "string"
+								}
+							]
+						},
+						"description": "Corporate family tree multiple pages (page 2)"
+					},
+					"response": []
+				}
+			],
+			"description": "Corporate family tree",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Reference data",
+			"item": [
+				{
+					"name": "Reference code categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/categories",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"categories"
+							]
+						},
+						"description": "Returns all reference data IDs and descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 3 (Language)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=3",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 4 (Legal form)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=4",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 7 (Registration numbers)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=7",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 30 (Industry code)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=30",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "30"
+								}
+							]
+						},
+						"description": "Reference data category 30 (i.e. Industry codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 100 (Resp area)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=100",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "100"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 166 (Operating status)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=166",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "166"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 192 (Information scope)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=192",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "192"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 197 (Entity type)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=197",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "197"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 275 (Financial condition)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=192",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "192"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 399 (SIC87)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=399",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "399"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 493 (Org size)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=493",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "493"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 750 (Legal form codes)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=750",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "750"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 2777 (ISO country codes)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=2777",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2777"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 241 (Record Status) Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=197",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "197"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				}
+			],
+			"description": "Reference Data API provides information about the D&B code values",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Network",
+			"item": [
+				{
+					"name": "Resolved Person Insights",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/resolvednetworkinsights/duns/:sDUNS/roles?productId=rnirpi&versionId=v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"resolvednetworkinsights",
+								"duns",
+								":sDUNS",
+								"roles"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "rnirpi"
+								},
+								{
+									"key": "versionId",
+									"value": "v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "386267640"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roleplayer",
+			"item": [
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/networkintelligence/roles?searchMethod=ExactMatch&organizationName=Stichting Hulptroepen Alliantie&countryISOAlpha2Code=NL&pageNumber=1&pageSize=5",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"networkintelligence",
+								"roles"
+							],
+							"query": [
+								{
+									"key": "searchMethod",
+									"value": "ExactMatch"
+								},
+								{
+									"key": "searchTerm",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "givenName",
+									"value": "Sywert",
+									"disabled": true
+								},
+								{
+									"key": "middleName",
+									"value": " ",
+									"disabled": true
+								},
+								{
+									"key": "familyName",
+									"value": "van Lienden",
+									"disabled": true
+								},
+								{
+									"key": "fullName",
+									"value": "Sywert van Lienden",
+									"disabled": true
+								},
+								{
+									"key": "duns",
+									"value": "493398040",
+									"disabled": true
+								},
+								{
+									"key": "organizationName",
+									"value": "Stichting Hulptroepen Alliantie"
+								},
+								{
+									"key": "associatedDUNS",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "associatedOrganizationName",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "associatedOperatingStatus",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "associatedLegalForm",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "birthDate",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "nationality",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "streetAddressLine1",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "streetAddressLine2",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "addressLocality",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "addressRegion",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								},
+								{
+									"key": "postalCode",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "pageNumber",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "5"
+								},
+								{
+									"key": "returnNavigators",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/networkintelligence/roles/:sRoleKey?blockID=roleplayerinfo_v1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"networkintelligence",
+								"roles",
+								":sRoleKey"
+							],
+							"query": [
+								{
+									"key": "blockID",
+									"value": "roleplayerinfo_v1"
+								}
+							],
+							"variable": [
+								{
+									"key": "sRoleKey",
+									"value": "5aabd015-e661-3b05-833a-d04fba9f5de6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Source of Wealth",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/networkintelligence/roles/:sRoleKey?blockID=sourceofwealthinfo_v1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"networkintelligence",
+								"roles",
+								":sRoleKey"
+							],
+							"query": [
+								{
+									"key": "blockID",
+									"value": "sourceofwealthinfo_v1"
+								}
+							],
+							"variable": [
+								{
+									"key": "sRoleKey",
+									"value": "5aabd015-e661-3b05-833a-d04fba9f5de6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Global Business Ranking",
+			"item": [
+				{
+					"name": "GBR",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=globalbusinessranking_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "globalbusinessranking_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "489478007",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Monitoring",
+			"item": [
+				{
+					"name": "Create registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"value": "basic_tcr",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Basic trade credit risk registration",
+									"type": "text"
+								},
+								{
+									"key": "blockIds",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1,eventfilings_L1_v1,financialstrengthinsight_L2_v1,paymentinsight_L1_v1",
+									"type": "text"
+								},
+								{
+									"key": "notificationType",
+									"value": "FULL_PRODUCT",
+									"type": "text"
+								},
+								{
+									"key": "deliveryFrequency",
+									"value": "DAILY",
+									"type": "text"
+								},
+								{
+									"key": "deliveryTrigger",
+									"value": "PUSH",
+									"type": "text"
+								},
+								{
+									"key": "destinationType",
+									"value": "STP",
+									"type": "text"
+								},
+								{
+									"key": "fileTransferProfile",
+									"value": "a_xxx",
+									"type": "text"
+								},
+								{
+									"key": "seedData",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "duns",
+									"type": "file",
+									"src": "/C:/Users/derooijh/OneDrive - ALTARES - D&B/Documents/Misc/DUNS.txt"
+								},
+								{
+									"key": "email",
+									"value": "contact.person@customer.com,hans.derooij@altares.com",
+									"type": "text"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create registration pull",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"value": "basic_tcr_pull",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Basic trade credit risk registration pull",
+									"type": "text"
+								},
+								{
+									"key": "blockIds",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1,eventfilings_L1_v1,financialstrengthinsight_L2_v1,paymentinsight_L1_v1",
+									"type": "text"
+								},
+								{
+									"key": "notificationType",
+									"value": "UPDATE",
+									"type": "text"
+								},
+								{
+									"key": "deliveryFrequency",
+									"value": "DAILY",
+									"type": "text"
+								},
+								{
+									"key": "deliveryTrigger",
+									"value": "API_PULL",
+									"type": "text"
+								},
+								{
+									"key": "seedData",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "duns",
+									"type": "file",
+									"src": "/C:/Users/derooijh/localFiles/Misc/temp/DUNS.txt"
+								},
+								{
+									"key": "email",
+									"value": "contact.person@customer.com,hans.derooij@altares.com",
+									"type": "text"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332",
+									"type": "text"
+								},
+								{
+									"key": "destinationType",
+									"value": "STP",
+									"type": "text"
+								},
+								{
+									"key": "fileTransferProfile",
+									"value": "a_xxx",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List registrations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"value": "hdr2_registration",
+									"type": "text"
+								},
+								{
+									"key": "blockIds",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1",
+									"type": "text"
+								},
+								{
+									"key": "notificationType",
+									"value": "FULL_PRODUCT",
+									"type": "text"
+								},
+								{
+									"key": "deliveryFrequency",
+									"value": "DAILY",
+									"type": "text"
+								},
+								{
+									"key": "deliveryTrigger",
+									"value": "PUSH",
+									"type": "text"
+								},
+								{
+									"key": "destinationType",
+									"value": "STP",
+									"type": "text"
+								},
+								{
+									"key": "fileTransferProfile",
+									"value": "BLXCCI01",
+									"type": "text"
+								},
+								{
+									"key": "seedData",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "duns",
+									"type": "file",
+									"src": "/C:/Users/derooijh/OneDrive - ALTARES - D&B/Documents/DUNS.txt"
+								},
+								{
+									"key": "email",
+									"value": "alexander.langelaar@altares.com,hans.derooij@altares.com",
+									"type": "text"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration status",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"value": "hdr2_registration",
+									"type": "text"
+								},
+								{
+									"key": "blockIds",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1",
+									"type": "text"
+								},
+								{
+									"key": "notificationType",
+									"value": "FULL_PRODUCT",
+									"type": "text"
+								},
+								{
+									"key": "deliveryFrequency",
+									"value": "DAILY",
+									"type": "text"
+								},
+								{
+									"key": "deliveryTrigger",
+									"value": "PUSH",
+									"type": "text"
+								},
+								{
+									"key": "destinationType",
+									"value": "STP",
+									"type": "text"
+								},
+								{
+									"key": "fileTransferProfile",
+									"value": "BLXCCI01",
+									"type": "text"
+								},
+								{
+									"key": "seedData",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "duns",
+									"type": "file",
+									"src": "/C:/Users/derooijh/OneDrive - ALTARES - D&B/Documents/DUNS.txt"
+								},
+								{
+									"key": "email",
+									"value": "alexander.langelaar@altares.com,hans.derooij@altares.com",
+									"type": "text"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/:reference/status",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								":reference",
+								"status"
+							],
+							"variable": [
+								{
+									"key": "reference",
+									"value": "basic_tcr"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"value": "hdr2_registration",
+									"type": "text"
+								},
+								{
+									"key": "blockIds",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1",
+									"type": "text"
+								},
+								{
+									"key": "notificationType",
+									"value": "FULL_PRODUCT",
+									"type": "text"
+								},
+								{
+									"key": "deliveryFrequency",
+									"value": "DAILY",
+									"type": "text"
+								},
+								{
+									"key": "deliveryTrigger",
+									"value": "PUSH",
+									"type": "text"
+								},
+								{
+									"key": "destinationType",
+									"value": "STP",
+									"type": "text"
+								},
+								{
+									"key": "fileTransferProfile",
+									"value": "BLXCCI01",
+									"type": "text"
+								},
+								{
+									"key": "seedData",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "duns",
+									"type": "file",
+									"src": "/C:/Users/derooijh/OneDrive - ALTARES - D&B/Documents/DUNS.txt"
+								},
+								{
+									"key": "email",
+									"value": "alexander.langelaar@altares.com,hans.derooij@altares.com",
+									"type": "text"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/:reference",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								":reference"
+							],
+							"variable": [
+								{
+									"key": "reference",
+									"value": "basic_tcr"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unsuppress",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/:reference/suppress",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								":reference",
+								"suppress"
+							],
+							"variable": [
+								{
+									"key": "reference",
+									"value": "basic_tcr"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration get notifications",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"value": "hdr2_registration",
+									"type": "text"
+								},
+								{
+									"key": "blockIds",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1",
+									"type": "text"
+								},
+								{
+									"key": "notificationType",
+									"value": "FULL_PRODUCT",
+									"type": "text"
+								},
+								{
+									"key": "deliveryFrequency",
+									"value": "DAILY",
+									"type": "text"
+								},
+								{
+									"key": "deliveryTrigger",
+									"value": "PUSH",
+									"type": "text"
+								},
+								{
+									"key": "destinationType",
+									"value": "STP",
+									"type": "text"
+								},
+								{
+									"key": "fileTransferProfile",
+									"value": "BLXCCI01",
+									"type": "text"
+								},
+								{
+									"key": "seedData",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "duns",
+									"type": "file",
+									"src": "/C:/Users/derooijh/OneDrive - ALTARES - D&B/Documents/DUNS.txt"
+								},
+								{
+									"key": "email",
+									"value": "alexander.langelaar@altares.com,hans.derooij@altares.com",
+									"type": "text"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/:reference/notifications?maxNotifications=100",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								":reference",
+								"notifications"
+							],
+							"query": [
+								{
+									"key": "maxNotifications",
+									"value": "100"
+								}
+							],
+							"variable": [
+								{
+									"key": "reference",
+									"value": "basic_tcr_pull"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration get notifications replay",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"value": "hdr2_registration",
+									"type": "text"
+								},
+								{
+									"key": "blockIds",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1",
+									"type": "text"
+								},
+								{
+									"key": "notificationType",
+									"value": "FULL_PRODUCT",
+									"type": "text"
+								},
+								{
+									"key": "deliveryFrequency",
+									"value": "DAILY",
+									"type": "text"
+								},
+								{
+									"key": "deliveryTrigger",
+									"value": "PUSH",
+									"type": "text"
+								},
+								{
+									"key": "destinationType",
+									"value": "STP",
+									"type": "text"
+								},
+								{
+									"key": "fileTransferProfile",
+									"value": "BLXCCI01",
+									"type": "text"
+								},
+								{
+									"key": "seedData",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "duns",
+									"type": "file",
+									"src": "/C:/Users/derooijh/OneDrive - ALTARES - D&B/Documents/DUNS.txt"
+								},
+								{
+									"key": "email",
+									"value": "alexander.langelaar@altares.com,hans.derooij@altares.com",
+									"type": "text"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/:reference/notifications/replay?maxNotifications=100&replayStartTimestamp=2022-09-07T00:00:00Z",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								":reference",
+								"notifications",
+								"replay"
+							],
+							"query": [
+								{
+									"key": "maxNotifications",
+									"value": "100"
+								},
+								{
+									"key": "replayStartTimestamp",
+									"value": "2022-09-07T00:00:00Z"
+								}
+							],
+							"variable": [
+								{
+									"key": "reference",
+									"value": "basic_tcr_pull"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration add subject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "addSubjectIDs",
+									"type": "file",
+									"src": "/C:/Users/derooijh/OneDrive - ALTARES - D&B/Documents/Misc/Temp/addsubjects.txt"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/:reference/subjects/:sDUNS",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								":reference",
+								"subjects",
+								":sDUNS"
+							],
+							"variable": [
+								{
+									"key": "reference",
+									"value": "basic_tcr"
+								},
+								{
+									"key": "sDUNS",
+									"value": "408875149"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration add subjects",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "addSubjectIDs",
+									"type": "file",
+									"src": "/C:/Users/derooijh/localFiles/Misc/temp/DUNS.txt"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/:reference/subjects",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								":reference",
+								"subjects"
+							],
+							"variable": [
+								{
+									"key": "reference",
+									"value": "basic_tcr"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration subject status",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"value": "hdr2_registration",
+									"type": "text"
+								},
+								{
+									"key": "blockIds",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1",
+									"type": "text"
+								},
+								{
+									"key": "notificationType",
+									"value": "FULL_PRODUCT",
+									"type": "text"
+								},
+								{
+									"key": "deliveryFrequency",
+									"value": "DAILY",
+									"type": "text"
+								},
+								{
+									"key": "deliveryTrigger",
+									"value": "PUSH",
+									"type": "text"
+								},
+								{
+									"key": "destinationType",
+									"value": "STP",
+									"type": "text"
+								},
+								{
+									"key": "fileTransferProfile",
+									"value": "BLXCCI01",
+									"type": "text"
+								},
+								{
+									"key": "seedData",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "duns",
+									"type": "file",
+									"src": "/C:/Users/derooijh/OneDrive - ALTARES - D&B/Documents/DUNS.txt"
+								},
+								{
+									"key": "email",
+									"value": "alexander.langelaar@altares.com,hans.derooij@altares.com",
+									"type": "text"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/:reference/subjects/:subjectID",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								":reference",
+								"subjects",
+								":subjectID"
+							],
+							"variable": [
+								{
+									"key": "reference",
+									"value": "basic_tcr"
+								},
+								{
+									"key": "subjectID",
+									"value": "372428847"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration export subjects",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"value": "hdr2_registration",
+									"type": "text"
+								},
+								{
+									"key": "blockIds",
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1",
+									"type": "text"
+								},
+								{
+									"key": "notificationType",
+									"value": "FULL_PRODUCT",
+									"type": "text"
+								},
+								{
+									"key": "deliveryFrequency",
+									"value": "DAILY",
+									"type": "text"
+								},
+								{
+									"key": "deliveryTrigger",
+									"value": "PUSH",
+									"type": "text"
+								},
+								{
+									"key": "destinationType",
+									"value": "STP",
+									"type": "text"
+								},
+								{
+									"key": "fileTransferProfile",
+									"value": "BLXCCI01",
+									"type": "text"
+								},
+								{
+									"key": "seedData",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "duns",
+									"type": "file",
+									"src": "/C:/Users/derooijh/OneDrive - ALTARES - D&B/Documents/DUNS.txt"
+								},
+								{
+									"key": "email",
+									"value": "alexander.langelaar@altares.com,hans.derooij@altares.com",
+									"type": "text"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://plus.dnb.com/v1/monitoring/registrations/:reference/subjects",
+							"protocol": "https",
+							"host": [
+								"plus",
+								"dnb",
+								"com"
+							],
+							"path": [
+								"v1",
+								"monitoring",
+								"registrations",
+								":reference",
+								"subjects"
+							],
+							"variable": [
+								{
+									"key": "reference",
+									"value": "basic_tcr_pull"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"bodyData = JSON.parse(responseBody);\r",
+							"pm.globals.set(\"glob_dpl_db_token\", bodyData.access_token);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{glob_dpl_db_auth_secret}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{glob_dpl_db_auth_key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"grant_type\":\"client_credentials\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{protocol}}://{{url}}:{{port}}/v2/token",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v2",
+						"token"
+					]
+				},
+				"description": "Authentication request (POST) to get API access token"
+			},
+			"response": []
+		},
+		{
+			"name": "Entitlements",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{url}}:{{port}}/v1/entitlements",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v1",
+						"entitlements"
+					]
+				},
+				"description": "Returns all reference data IDs and descriptions"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{glob_dpl_db_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "protocol",
+			"value": "https"
+		},
+		{
+			"key": "url",
+			"value": "plus.dnb.com"
+		},
+		{
+			"key": "port",
+			"value": "443"
+		}
+	]
+}
