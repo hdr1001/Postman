@@ -2254,7 +2254,7 @@
 							"variable": [
 								{
 									"key": "sDUNS",
-									"value": "492127996",
+									"value": "489127287",
 									"type": "string",
 									"description": "DUNS requested"
 								}
@@ -2295,7 +2295,7 @@
 							"variable": [
 								{
 									"key": "sDUNS",
-									"value": "386267640",
+									"value": "489127287",
 									"type": "string",
 									"description": "DUNS requested"
 								}
@@ -2336,7 +2336,7 @@
 							"variable": [
 								{
 									"key": "sDUNS",
-									"value": "386267640",
+									"value": "489127287",
 									"type": "string",
 									"description": "DUNS requested"
 								}
@@ -2352,7 +2352,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L4_v1&tradeUp=hq",
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=principalscontacts_L4_v2&tradeUp=hq",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
@@ -2367,7 +2367,7 @@
 							"query": [
 								{
 									"key": "blockIDs",
-									"value": "principalscontacts_L4_v1"
+									"value": "principalscontacts_L4_v2"
 								},
 								{
 									"key": "tradeUp",
@@ -3126,7 +3126,7 @@
 					"response": []
 				},
 				{
-					"name": "Global Financials (v1)",
+					"name": "Global Financials L1 (v1)",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -3167,12 +3167,12 @@
 					"response": []
 				},
 				{
-					"name": "Global Financials (v2)",
+					"name": "Global Financials L2 (v2)",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=globalfinancials_L1_v1&tradeUp=hq",
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=globalfinancials_L2_v1&tradeUp=hq",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
@@ -3187,7 +3187,7 @@
 							"query": [
 								{
 									"key": "blockIDs",
-									"value": "globalfinancials_L1_v1"
+									"value": "globalfinancials_L2_v1"
 								},
 								{
 									"key": "tradeUp",
@@ -3197,7 +3197,7 @@
 							"variable": [
 								{
 									"key": "sDUNS",
-									"value": "489478007",
+									"value": "403425999",
 									"type": "string",
 									"description": "DUNS requested"
 								}
@@ -4044,6 +4044,34 @@
 								{
 									"key": "id",
 									"value": "166"
+								}
+							]
+						},
+						"description": "Reference data category 2777 (i.e. ISO country codes)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ref data category 171 (Reliability)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=171",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "171"
 								}
 							]
 						},
