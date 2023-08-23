@@ -239,6 +239,58 @@
 					"response": []
 				},
 				{
+					"name": "inLanguage, name, CN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?inLanguage=zh-hans-CN&name=申能集团商务服务有限公司&streetAddressLine1=中国（上海）自由贸易试验区陆家嘴环路958号330室&addressLocality=市辖区&addressRegion=上海&countryISOAlpha2Code=CN&customerReference1=test rec",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "inLanguage",
+									"value": "zh-hans-CN"
+								},
+								{
+									"key": "name",
+									"value": "申能集团商务服务有限公司"
+								},
+								{
+									"key": "streetAddressLine1",
+									"value": "中国（上海）自由贸易试验区陆家嘴环路958号330室"
+								},
+								{
+									"key": "addressLocality",
+									"value": "市辖区"
+								},
+								{
+									"key": "addressRegion",
+									"value": "上海"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "CN"
+								},
+								{
+									"key": "customerReference1",
+									"value": "test rec"
+								}
+							]
+						},
+						"description": "IDentity Resolution name, housenumber, postalcode, country"
+					},
+					"response": []
+				},
+				{
 					"name": "IDR registration number (AT Trade Reg #)",
 					"request": {
 						"method": "GET",
@@ -372,7 +424,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=121830616&countryISOAlpha2Code=BG",
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=105581425&countryISOAlpha2Code=BG",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
@@ -386,7 +438,7 @@
 							"query": [
 								{
 									"key": "registrationNumber",
-									"value": "121830616"
+									"value": "105581425"
 								},
 								{
 									"key": "countryISOAlpha2Code",
@@ -404,7 +456,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=BG121830616&countryISOAlpha2Code=BG",
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=BG105581425&countryISOAlpha2Code=BG",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
@@ -418,11 +470,43 @@
 							"query": [
 								{
 									"key": "registrationNumber",
-									"value": "BG121830616"
+									"value": "BG105581425"
 								},
 								{
 									"key": "countryISOAlpha2Code",
 									"value": "BG"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (GB CRO)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=13539417&countryISOAlpha2Code=GB",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "13539417"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "GB"
 								}
 							]
 						},
@@ -719,6 +803,102 @@
 					"response": []
 				},
 				{
+					"name": "IDR registration number (LT VAT)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=306071231&countryISOAlpha2Code=LT",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "306071231"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "LT"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (LV VAT)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=LV40003637994&countryISOAlpha2Code=LV",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "LV40003637994"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "LV"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (MC RCI)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=77S01656&countryISOAlpha2Code=MC",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "77S01656"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "MC"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
 					"name": "IDR registration number (NL KvK)",
 					"request": {
 						"method": "GET",
@@ -743,6 +923,42 @@
 								{
 									"key": "countryISOAlpha2Code",
 									"value": "NL"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "IDR registration number (NL KvK) wrong name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?registrationNumber=65482980&countryISOAlpha2Code=NL&name=Wrong name",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"cleanseMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "65482980"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								},
+								{
+									"key": "name",
+									"value": "Wrong name"
 								}
 							]
 						},
@@ -993,42 +1209,6 @@
 					"response": []
 				},
 				{
-					"name": "IDR registration number (PL)",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/cleanseMatch?countryISOAlpha2Code=IT&registrationNumber=IT00470550013&exclusionCriteria=ExcludeOutofBusiness",
-							"protocol": "{{protocol}}",
-							"host": [
-								"{{url}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"v1",
-								"match",
-								"cleanseMatch"
-							],
-							"query": [
-								{
-									"key": "countryISOAlpha2Code",
-									"value": "IT"
-								},
-								{
-									"key": "registrationNumber",
-									"value": "IT00470550013"
-								},
-								{
-									"key": "exclusionCriteria",
-									"value": "ExcludeOutofBusiness"
-								}
-							]
-						},
-						"description": "IDentity Resolution registration number, country"
-					},
-					"response": []
-				},
-				{
 					"name": "IDR DUNS",
 					"request": {
 						"method": "GET",
@@ -1172,6 +1352,99 @@
 							""
 						]
 					}
+				}
+			]
+		},
+		{
+			"name": "Extended match",
+			"item": [
+				{
+					"name": "Registration number (NL KvK)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/extendedMatch?registrationNumber=65482980&countryISOAlpha2Code=NL&blockIDs=companyinfo_L2_v1,financialstrengthinsight_L2_v1&tradeUp=hq&orderReason=6332",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"extendedMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "65482980"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								},
+								{
+									"key": "blockIDs",
+									"value": "companyinfo_L2_v1,financialstrengthinsight_L2_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
+				},
+				{
+					"name": "Registration number (NL BUN)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/match/extendedMatch?registrationNumber=000018362737&countryISOAlpha2Code=NL&blockIDs=companyinfo_L2_v1,financialstrengthinsight_L2_v1&tradeUp=hq&orderReason=6332",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"match",
+								"extendedMatch"
+							],
+							"query": [
+								{
+									"key": "registrationNumber",
+									"value": "000018362737"
+								},
+								{
+									"key": "countryISOAlpha2Code",
+									"value": "NL"
+								},
+								{
+									"key": "blockIDs",
+									"value": "companyinfo_L2_v1,financialstrengthinsight_L2_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								},
+								{
+									"key": "orderReason",
+									"value": "6332"
+								}
+							]
+						},
+						"description": "IDentity Resolution duns"
+					},
+					"response": []
 				}
 			]
 		},
@@ -1536,42 +1809,6 @@
 								"description": "Search \"al\" in country code NL"
 							},
 							"response": []
-						},
-						{
-							"name": "Typeahead \"basic fit, delft\" NL Copy",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/typeahead?searchTerm=basic fit&countryISOAlpha2Code=NL&addressLocality=delft",
-									"protocol": "{{protocol}}",
-									"host": [
-										"{{url}}"
-									],
-									"port": "{{port}}",
-									"path": [
-										"v1",
-										"search",
-										"typeahead"
-									],
-									"query": [
-										{
-											"key": "searchTerm",
-											"value": "basic fit"
-										},
-										{
-											"key": "countryISOAlpha2Code",
-											"value": "NL"
-										},
-										{
-											"key": "addressLocality",
-											"value": "delft"
-										}
-									]
-								},
-								"description": "Search \"al\" in country code NL"
-							},
-							"response": []
 						}
 					],
 					"description": "Webform typeahead",
@@ -1632,6 +1869,37 @@
 						},
 						{
 							"name": "Registration number (incl branches)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"registrationNumbers\":[\"37026706\"],\r\n    \"countryISOAlpha2Code\":\"NL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{url}}:{{port}}/v1/search/criteria",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{url}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"v1",
+										"search",
+										"criteria"
+									]
+								},
+								"description": "Criteria search for registration number"
+							},
+							"response": []
+						},
+						{
+							"name": "Advocaten",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -2065,7 +2333,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=hierarchyconnections_L1_v1&tradeUp=hq",
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=hierarchyconnections_L1_v1",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
@@ -2084,13 +2352,51 @@
 								},
 								{
 									"key": "tradeUp",
-									"value": "hq"
+									"value": "hq",
+									"disabled": true
 								}
 							],
 							"variable": [
 								{
 									"key": "sDUNS",
-									"value": "491689684",
+									"value": "502340037",
+									"type": "string",
+									"description": "DUNS requested"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Hierarchies & Connections L1 (v1) branch",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=hierarchyconnections_L1_v1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "hierarchyconnections_L1_v1"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "264312720",
 									"type": "string",
 									"description": "DUNS requested"
 								}
@@ -3167,7 +3473,7 @@
 					"response": []
 				},
 				{
-					"name": "Global Financials L2 (v2)",
+					"name": "Global Financials L2 (v1)",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -3249,6 +3555,84 @@
 					"response": []
 				},
 				{
+					"name": "Supply Chain Risk Index L1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=supplychainriskindex_L1_v1&tradeUp=hq",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "supplychainriskindex_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": "hq"
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "404248536"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ext Disruption Insight L1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=externaldisruptioninsight_L1_v1&tradeUp=",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"data",
+								"duns",
+								":sDUNS"
+							],
+							"query": [
+								{
+									"key": "blockIDs",
+									"value": "externaldisruptioninsight_L1_v1"
+								},
+								{
+									"key": "tradeUp",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "sDUNS",
+									"value": "404248536"
+								}
+							]
+						},
+						"description": "Company Profile, Linkage & Executives (v2)"
+					},
+					"response": []
+				},
+				{
 					"name": "Indate Insight L1 (v1)",
 					"request": {
 						"method": "GET",
@@ -3295,7 +3679,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyinfo_L2_v1,principalscontacts_L3_v1&tradeUp=hq&orderReason=6332",
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/data/duns/:sDUNS?blockIDs=companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1&tradeUp=hq&orderReason=6332",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
@@ -3310,7 +3694,7 @@
 							"query": [
 								{
 									"key": "blockIDs",
-									"value": "companyinfo_L2_v1,principalscontacts_L3_v1"
+									"value": "companyinfo_L2_v1,principalscontacts_L3_v2,hierarchyconnections_L1_v1"
 								},
 								{
 									"key": "tradeUp",
@@ -3324,7 +3708,7 @@
 							"variable": [
 								{
 									"key": "sDUNS",
-									"value": "489127287",
+									"value": "489478007",
 									"type": "string"
 								}
 							]
@@ -3996,6 +4380,34 @@
 					"response": []
 				},
 				{
+					"name": "Ref data category 33 (Financial Statement Item)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=33",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"referenceData",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "33"
+								}
+							]
+						},
+						"description": "Reference data category 30 (i.e. Industry codes)"
+					},
+					"response": []
+				},
+				{
 					"name": "Ref data category 100 (Resp area)",
 					"request": {
 						"method": "GET",
@@ -4268,34 +4680,6 @@
 								{
 									"key": "id",
 									"value": "2777"
-								}
-							]
-						},
-						"description": "Reference data category 2777 (i.e. ISO country codes)"
-					},
-					"response": []
-				},
-				{
-					"name": "Ref data category 241 (Record Status) Copy",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{protocol}}://{{url}}:{{port}}/v1/referenceData/category?id=197",
-							"protocol": "{{protocol}}",
-							"host": [
-								"{{url}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"v1",
-								"referenceData",
-								"category"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "197"
 								}
 							]
 						},
@@ -5586,7 +5970,7 @@
 			]
 		},
 		{
-			"name": "Authentication",
+			"name": "Authentication v2",
 			"event": [
 				{
 					"listen": "test",
@@ -5641,6 +6025,76 @@
 					"port": "{{port}}",
 					"path": [
 						"v2",
+						"token"
+					]
+				},
+				"description": "Authentication request (POST) to get API access token"
+			},
+			"response": []
+		},
+		{
+			"name": "Authentication v3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"bodyData = JSON.parse(responseBody);\r",
+							"pm.globals.set(\"glob_dpl_db_token\", bodyData.access_token);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{glob_dpl_db_auth_secret}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{glob_dpl_db_auth_key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{protocol}}://{{url}}:{{port}}/v3/token",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v3",
 						"token"
 					]
 				},
